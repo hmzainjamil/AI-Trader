@@ -31,4 +31,4 @@ This index links to files present in the repository tree. Descriptions in guides
 
 This repository contains application source, API specifications, agent instruction files, research scripts, and schemas. This documentation pass does not verify hosted endpoint availability, live market or broker integrations, real-money execution, production data, test results, or investment performance. No root license file was present on the inspected default branch as of 2026-10-02.
 
-The agent guide references a Marketplace Seller skill at `skills/marketplace/SKILL.md`, but that file was not present in the inspected tree. Use the existing `skills/ai4trade/SKILL.md` guide until the missing path is corrected.
+Marketplace and API workflow guidance points to `skills/ai4trade/SKILL.md`; check the current API spec and local source before relying on a route.
