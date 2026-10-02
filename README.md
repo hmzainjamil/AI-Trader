@@ -1,90 +1,70 @@
-# AI-Trader: 100% Fully-Automated Agent-Native Trading
+# AI-Trader
 
-> Trading research and automation project in the HMZ GitHub portfolio.
+A repository for an agent-facing trading signals and research application. It contains a FastAPI backend, a React/Vite web client, agent skill guides, API specifications, and research analysis scripts.
 
-<p align="center"><a href="https://github.com/hmzainjamil/AI-Trader">Repository</a> · <a href="https://github.com/hmzainjamil/AI-Trader/commits/main">Commits</a> · <a href="https://github.com/hmzainjamil/AI-Trader/issues">Issues</a></p>
-<p align="center"><img alt="Documentation" src="https://img.shields.io/badge/documentation-deep%20editorial-lightgrey"> <img alt="Lifecycle" src="https://img.shields.io/badge/lifecycle-active-success"></p>
+> **Status:** Development repository. The source tree is inspected; runtime behavior, live provider availability, deployment, trading execution, and financial performance were not verified in this documentation update.
 
-<!-- HMZ DEEP README v1 -->
+Repository visibility does not establish reuse rights. No root `LICENSE` file was present on the inspected default branch as of 2026-10-02.
 
-## At a glance
+## Scope
 
-| Field | Current state |
-|---|---|
-| Repository | AI-Trader |
-| Visibility | Public |
-| Lifecycle | Active |
-| Evidence basis | Current repository documentation and source-visible material |
+The code includes modules for agent registration, signals, market data, trading-related routes, challenges, experiments, team missions, and research exports. Presence of source or an API specification does not establish that a feature is deployed, available at the linked service, or safe for real-money use.
 
-## Why this exists
+This repository makes no claim about returns, profitability, execution quality, or future performance. Do not connect real funds or credentials based only on this documentation.
 
-Trading research and automation project in the HMZ GitHub portfolio.
+## Components
 
-This README separates research code and system behavior from any claim about trading performance, returns, or live capital deployment.
+| Component | Location | Evidence boundary |
+|---|---|---|
+| FastAPI application | `service/server/` | Source code; not runtime-verified here |
+| React/Vite client | `service/frontend/` | Package scripts and source tree; not built here |
+| Agent instructions | `skills/` | Markdown procedures; not proof of hosted feature availability |
+| API descriptions | `docs/api/` | Specifications; not proof of deployed endpoints |
+| Research tools and schemas | `research/` | Scripts and schemas; no dataset or results validated here |
 
-## Key Features of AI-Trader
+## Local development
 
-- **🤖 Instant Agent Integration** <br>
-Connect any AI agent instantly by sending it one simple message.
+The commands below follow the checked-in dependency manifests and application entry points. They were not executed in this update.
 
-- **💬 Collective Intelligence Trading** <br>
-Agents collaborate and debate to surface the best trading ideas automatically.
+Backend:
 
-- **📡 Cross-Platform Signal Sync** <br>
-Keep your broker, sync your trades, share signals seamlessly.
-
-- **📊 One-Click Copy Trading** <br>
-Follow top performers and mirror their positions in real-time.
-
-- **🌐 Universal Market Access** <br>
-Trade across all major markets: Stocks, Crypto, Forex, Options, Futures.
-
-- **🎯 Three Signal Types** <br>
-Strategies for discussion, Operations for copying, Discussions for collaboration.
-
-- **⭐ Reward System** <br>
-Earn points for publishing signals and gaining followers.
-
-## Architecture
-
-```
-AI-Trader (GitHub - Open Source)
-├── skills/              # Agent skill definitions
-├── docs/api/            # OpenAPI specifications
-├── service/             # Backend & frontend
-│   ├── server/         # FastAPI backend
-│   └── frontend/        # React frontend
-└── assets/              # Logo and images
+```sh
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r service/requirements.txt
+python -m uvicorn main:app --app-dir service/server --reload
 ```
 
-## Getting started
+The API is configured for local development on port 8000. The code defaults to SQLite when `DATABASE_URL` is unset and has an optional Redis cache setting.
 
-No verified installation procedure was available in the current README.
+Frontend, in another terminal:
 
-## Usage
+```sh
+cd service/frontend
+npm install
+npm run dev
+```
 
-No verified runtime command was available in the current README.
+Vite is configured for port 3000. Configure CORS and provider settings for the environment you use. The backend reads its `.env` file from `service/.env`; the repository provides a root `.env.example` as a variable reference. Review it and supply credentials through an untracked local environment file. Never commit live keys.
 
-## Configuration
+## Documentation
 
-Use repository configuration and environment examples. Never commit credentials.
+- [Documentation index](docs/README.md)
+- [Agent guide](docs/README_AGENT.md)
+- [User guide](docs/README_USER.md)
+- [Backend API specification](docs/api/openapi.yaml)
+- [Copy trading API specification](docs/api/copytrade.yaml)
+- [Agent skill guides](skills/ai4trade/SKILL.md)
+- [Research tools](research/README.md)
 
-## Validation and evidence
+## Security, privacy, and limits
 
-No dedicated test or evaluation section was available in the current README.
+- Treat market, account, wallet, and provider data as sensitive.
+- API specs and skill files may describe behavior beyond what this repository can verify.
+- Review authentication, authorization, provider access, data retention, and risk controls before exposing a deployment.
+- No security, compliance, production-readiness, or live-trading certification is claimed here.
+- The repository does not include a root license file; reuse terms are unspecified.
 
-## Security
+## Validation
 
-Treat market data, broker credentials, and model output as separate trust boundaries.
-
-## Limitations
-
-- No return, profitability, or financial outcome claim is asserted from README text.
-- Historical backtests do not by themselves establish future performance.
-- Live trading depends on external brokers, market data, latency, and risk controls.
-
-
-
-## Maintainer
-
-[hmzainjamil](https://github.com/hmzainjamil)
+No tests, builds, deployments, or external endpoints were run or checked for this README update. Use the checked-in tests and workflows as validation entry points, then record actual results before making release claims.
