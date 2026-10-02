@@ -58,6 +58,8 @@ Vite 配置使用 3000 端口。请按实际环境配置 CORS 和第三方服务
 - [Copy trading API 规范](docs/api/copytrade.yaml)
 - [Agent 技能说明](skills/ai4trade/SKILL.md)
 - [研究工具说明](research/README.md)
+- [后端服务 README](service/README.md)
+- [English README](README.md)
 
 ## 安全、隐私与限制
 
