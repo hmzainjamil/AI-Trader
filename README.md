@@ -1,5 +1,7 @@
 # AI-Trader
 
+[简体中文 README](README_ZH.md)
+
 A repository for an agent-facing trading signals and research application. It contains a FastAPI backend, a React/Vite web client, agent skill guides, API specifications, and research analysis scripts.
 
 > **Status:** Development repository. The source tree is inspected; runtime behavior, live provider availability, deployment, trading execution, and financial performance were not verified in this documentation update.
