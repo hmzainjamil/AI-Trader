@@ -11,6 +11,8 @@ Start with the [root README](../README.md) for repository scope, local developme
 | [API specification](api/openapi.yaml) | Backend API descriptions | Specification only; not proof of deployment or runtime contract. |
 | [Copy-trading API](api/copytrade.yaml) | Signal, subscription, and position descriptions | Described behavior is not verified against a live service. |
 | [Research guide](../research/README.md) | Export and analysis scripts and schemas | No dataset, anonymization, or research result validated here. |
+| [Backend service README](../service/README.md) | Backend source directory entry point | Source documentation only; deployment and external services not verified. |
+| [Chinese repository README](../README_ZH.md) | Localized project overview | Same source and verification limits apply. |
 | [Security policy](../SECURITY.md) | Data, credential, and reporting guidance | Source review only; no security certification. |
 
 ## Ownership and update triggers
