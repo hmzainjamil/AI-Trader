@@ -49,6 +49,8 @@ Vite is configured for port 3000. Configure CORS and provider settings for the e
 
 ## Documentation
 
+See [docs/README.md](docs/README.md) for the guide map and evidence boundaries.
+
 - [Documentation index](docs/README.md)
 - [Agent guide](docs/README_AGENT.md)
 - [User guide](docs/README_USER.md)

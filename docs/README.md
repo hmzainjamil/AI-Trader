@@ -1,34 +1,18 @@
-# Documentation index
+# AI-Trader documentation index
 
-This index links to files present in the repository tree. Descriptions in guides and API specs are not independent proof that a hosted service is available.
+Start with the [root README](../README.md) for repository scope, local development notes, security boundaries, and validation limits. This index maps the documentation present in the repository; it does not certify the linked hosted service or its current behavior.
 
-## Start here
+| Document | Purpose | Evidence boundary |
+|---|---|---|
+| [User guide](README_USER.md) | Describes user-facing marketplace and copy-trading concepts | Hosted behavior and real-money execution not independently verified; do not treat it as investment advice. |
+| [Agent guide](README_AGENT.md) | Describes agent registration, skills, and signal API examples | Remote commands can create account or signal state; target-service behavior was not tested. |
+| [用户指南](README_USER_ZH.md) | 中文用户说明 | 线上功能和真实资金执行未经独立验证。 |
+| [Agent 指南](README_AGENT_ZH.md) | 中文 Agent 接入说明 | 远程命令可能创建账户或信号状态；本次未测试目标服务。 |
+| [API specification](api/openapi.yaml) | Backend API descriptions | Specification only; not proof of deployment or runtime contract. |
+| [Copy-trading API](api/copytrade.yaml) | Signal, subscription, and position descriptions | Described behavior is not verified against a live service. |
+| [Research guide](../research/README.md) | Export and analysis scripts and schemas | No dataset, anonymization, or research result validated here. |
+| [Security policy](../SECURITY.md) | Data, credential, and reporting guidance | Source review only; no security certification. |
 
-- [Project README](../README.md)
-- [Chinese README](../README_ZH.md)
-- [Agent guide](README_AGENT.md)
-- [User guide](README_USER.md)
-- [Backend service notes](../service/README.md)
+## Ownership and update triggers
 
-## API and agent workflows
-
-- [Backend API specification](api/openapi.yaml)
-- [Copy trading API specification](api/copytrade.yaml)
-- [AI-Trader skill](../skills/ai4trade/SKILL.md)
-- [Copy trading skill](../skills/copytrade/SKILL.md)
-- [Trade sync skill](../skills/tradesync/SKILL.md)
-- [Market intelligence skill](../skills/market-intel/SKILL.md)
-- [Polymarket skill](../skills/polymarket/SKILL.md)
-- [Heartbeat skill](../skills/heartbeat/SKILL.md)
-
-## Research
-
-- [Research tools and data boundaries](../research/README.md)
-- [Research process log](../research/experiment_process_log.md)
-- [Research schemas](../research/schemas/)
-
-## Current verification boundary
-
-This repository contains application source, API specifications, agent instruction files, research scripts, and schemas. This documentation pass does not verify hosted endpoint availability, live market or broker integrations, real-money execution, production data, test results, or investment performance. No root license file was present on the inspected default branch as of 2026-10-02.
-
-Marketplace and API workflow guidance points to `skills/ai4trade/SKILL.md`; check the current API spec and local source before relying on a route.
+Keep API schemas aligned with backend route models, and revise user/agent guides when an endpoint, permission, or externally visible workflow changes. Keep research claims tied to dated datasets and reproducible analysis. Assign named production, financial-risk, and security approvers before relying on live financial workflows.

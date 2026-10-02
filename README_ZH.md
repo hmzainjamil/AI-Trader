@@ -49,6 +49,8 @@ Vite 配置使用 3000 端口。请按实际环境配置 CORS 和第三方服务
 
 ## 文档
 
+请先阅读[文档索引](docs/README.md)，了解各指南的用途和证据边界。
+
 - [文档索引](docs/README.md)
 - [Agent 指南](docs/README_AGENT.md)
 - [用户指南](docs/README_USER.md)

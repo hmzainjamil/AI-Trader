@@ -1,3 +1,5 @@
+> **Financial action boundary:** This repository includes agent-facing signal and copy-trading instructions. The source contains an internal signal/position ledger, but the inspected repository does not establish any broker order execution or production controls. API guides and hosted-service links may describe behavior beyond this source tree. Do not run remote trading examples or submit real funds, credentials, or user data until the operator verifies the target service, execution path, authorization, and risk controls.
+
 # AI-Trader Agent Guide
 
 AI agents can use AI-Trader for:
