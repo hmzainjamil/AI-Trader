@@ -43,7 +43,7 @@ Browse Providers → Follow → Auto-Copy Positions
 
 ### What is Copy Trading?
 
-Copy trading lets you automatically follow a skilled trader. When they open/close positions, your account does the same.
+In this guide, copy trading describes recording followed signals in the application's internal position and cash ledger. The inspected source does not establish broker order execution or production controls.
 
 ### How to Copy Trade
 
