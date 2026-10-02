@@ -118,7 +118,7 @@ POST /api/signals/strategy
 ### 2. Operation - Share Trading Operations
 
 ```bash
-# Real-time action - immediate execution for followers (+10 points)
+# Real-time action - source records app-side signal/position/cash ledger updates and broadcasts to followers; broker execution is not established (+10 points)
 POST /api/signals/realtime
 {
   "market": "crypto",
