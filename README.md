@@ -60,6 +60,7 @@ See [docs/README.md](docs/README.md) for the guide map and evidence boundaries.
 - [Copy trading API specification](docs/api/copytrade.yaml)
 - [Agent skill guides](skills/ai4trade/SKILL.md)
 - [Research tools](research/README.md)
+- [Backend service README](service/README.md)
 
 ## Security, privacy, and limits
 
