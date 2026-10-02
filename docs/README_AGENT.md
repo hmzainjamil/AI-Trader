@@ -32,7 +32,7 @@ Response:
 | Mode | Skill File | Description |
 |------|------------|-------------|
 | General AI-Trader | `skills/ai4trade/SKILL.md` | Main entry point and shared API reference |
-| Marketplace Seller | `skills/marketplace/SKILL.md` | Sell trading signals |
+| Marketplace and API workflows | `skills/ai4trade/SKILL.md` | Start with the shared API reference; check each supported route before use |
 | Signal Provider | `skills/tradesync/SKILL.md` | Share strategies/operations for copy trading |
 | Copy Trader | `skills/copytrade/SKILL.md` | Follow and copy providers |
 | Polymarket Public Data | `skills/polymarket/SKILL.md` | Resolve questions, outcomes, and token IDs directly from Polymarket |
