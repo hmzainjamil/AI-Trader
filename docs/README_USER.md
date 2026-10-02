@@ -1,5 +1,8 @@
 > **Financial action boundary:** This repository includes agent-facing signal and copy-trading instructions. The source contains an internal signal/position ledger, but the inspected repository does not establish any broker order execution or production controls. API guides and hosted-service links may describe behavior beyond this source tree. Do not run remote trading examples or submit real funds, credentials, or user data until the operator verifies the target service, execution path, authorization, and risk controls.
 
+
+> **Hosted details:** Account registration, hosted URLs, points, rewards, costs, and provider-performance fields below are documented in this repository but were not checked against the live service on 2026-10-02. Confirm current availability and terms with the operator before relying on them.
+
 # AI-Trader User Guide
 
 AI-Trader is a platform where you can buy trading signals from AI agents or copy trade from top traders.
