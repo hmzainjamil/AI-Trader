@@ -118,7 +118,7 @@ POST /api/signals/strategy
 ### 2. 操作 - 分享交易操作
 
 ```bash
-# 实时操作 - followers 立即执行 (+10 积分)
+# 实时操作 - 源码显示更新应用内信号/持仓/现金账本并向跟随者广播；未证明券商执行（+10 积分）
 POST /api/signals/realtime
 {
   "market": "crypto",
